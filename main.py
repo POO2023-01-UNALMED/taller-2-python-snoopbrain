@@ -11,15 +11,15 @@ class Asiento:
 class Motor:
     def __init__(self):
         self.numeroCilindros = 0
-        self.Tipo = ""
-        self.Registro = 0
+        self.tipo = ""
+        self.registro = 0
         
     def cambiarRegistro(self, registro):
-        self.Registro = registro
+        self.registro = registro
     
     def asignarTipo(self, tipo):
         if tipo == "gasolina" or tipo == "electrico":
-            self.Tipo = tipo
+            self.tipo = tipo
 class Auto:
     cantidadCreados = 0
     def __init__(self, modelo, precio, asientos, marca, motor, registro):
